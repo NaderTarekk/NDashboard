@@ -86,7 +86,7 @@ header {
   background-position: center;
   height: 100vh;
   width: 100%;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .navbar {
@@ -211,7 +211,6 @@ header {
   border-radius: 4px;
 }
 .section p {
-  font-size: 50px !important;
   font-weight: bold;
   color: var(--bs-gray-100);
 }
@@ -581,6 +580,7 @@ main .contact-section .row .contact-images .map {
   height: 10px;
   border-radius: 50%;
   background-color: tomato;
+  transition: 0.3s;
 }
 
 @keyframes women {
