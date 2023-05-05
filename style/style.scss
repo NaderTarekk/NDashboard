@@ -44,6 +44,7 @@ img {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .section-header {
@@ -89,6 +90,7 @@ header {
   width: 100%;
   overflow: hidden;
 }
+
 .navbar {
   // backdrop-filter: blur(30px);
   background-color: var(--bs-gray-100);
@@ -116,7 +118,7 @@ header {
           font-weight: 500;
           transition: 0.3s;
           margin: 0 10px;
-          font-size: 15px;
+          font-size: 13px;
 
           &:hover {
             background-color: var(--bs-primary);
@@ -653,6 +655,31 @@ main {
     .col-xl-3 {
       border: 1px solid var(--bs-gray-300);
       box-shadow: 0 0px 10px var(--bs-gray-600);
+    }
+  }
+}
+
+// notifications
+.notifications {
+  &:hover {
+    span {
+      background: #fff;
+    }
+  }
+
+  a {
+    i {
+      position: relative;
+
+      span {
+        position: absolute;
+        top: -6px;
+        right: -8px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: tomato;
+      }
     }
   }
 }
